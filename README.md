@@ -1,6 +1,6 @@
 # 9erPark
 
-9erPark is an iOS applicaion that allows for students at UNC Charlotte to:
+9erPark is an iOS application that allows students at UNC Charlotte to:
 * View live parking stats on campus
 * View parking deck availability
 * Get directions to parking decks
