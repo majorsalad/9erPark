@@ -76,6 +76,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C44BE63B25FAB85C00EC3FC7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		FBD59E7725F7F5B500285A47 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +106,7 @@
 		FBD59E8225F7F5B500285A47 /* 9erPark */ = {
 			isa = PBXGroup;
 			children = (
+				C44BE63B25FAB85C00EC3FC7 /* Resources */,
 				FBD59E8325F7F5B500285A47 /* AppDelegate.swift */,
 				FBD59E8525F7F5B500285A47 /* SceneDelegate.swift */,
 				FBD59E8725F7F5B500285A47 /* ViewController.swift */,
