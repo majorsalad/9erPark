@@ -10,13 +10,13 @@
 * Coming Soon
 
 ## Steps Involved
-* Contact UNC Charlotte PaTS to get permission and access to their parking data
-* Create both high and low fidelity prototypes
-     * Balsamiq for Low-Fi Prototype
-     * Figma for Hi-Fi Protoype
-* Write the application using Xcode and the Swift programming language
+* Contact UNC Charlotte PaTS to get permission and access to their parking data (completed)
+* Solve CORS policy error by writing our own Middleware server to access school parking data (completed)
+* Create both high and low fidelity prototypes (in progress)
+     * Balsamiq for Low-Fi Prototype (completed)
+     * Figma for Hi-Fi Protoype (in progress)
+* Translate Hi-Fi design into Xcode Storyboards through the use of AutoLayout and Stack Views (in progress)
+* Write the application using Xcode and the Swift programming language to access and display the data in our app (to be completed)
 
 ## Future Plans
 * Coming Soon
-
-* Adding test line to read me
