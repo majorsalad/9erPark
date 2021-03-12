@@ -1,20 +1,62 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="wQ0-dD-zUT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="rcs-5a-AJU">
+                                <rect key="frame" x="51" y="405" width="312.5" height="86"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="schoolLogo" translatesAutoresizingMaskIntoConstraints="NO" id="aHc-9F-1UU">
+                                        <rect key="frame" x="0.0" y="0.0" width="112" height="86"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="86" id="MhE-o3-jeP"/>
+                                            <constraint firstAttribute="width" constant="112" id="tzm-Sz-1ze"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9erPark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXX-tV-tT6">
+                                        <rect key="frame" x="130" y="11.5" width="182.5" height="63"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.22769273477157359" green="0.22769273477157359" blue="0.22769273477157359" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="2" height="3"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wQ0-dD-zUT" secondAttribute="trailing" id="01h-eg-miB"/>
+                            <constraint firstItem="wQ0-dD-zUT" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="8Dk-8m-ReT"/>
+                            <constraint firstAttribute="bottom" secondItem="wQ0-dD-zUT" secondAttribute="bottom" id="MGF-Hl-VOj"/>
+                            <constraint firstItem="rcs-5a-AJU" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="YjM-TO-Lv6"/>
+                            <constraint firstItem="wQ0-dD-zUT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ZP8-Ry-BCO"/>
+                            <constraint firstItem="rcs-5a-AJU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dHp-G4-NTp"/>
+                            <constraint firstItem="wQ0-dD-zUT" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ht6-4k-4aQ"/>
+                            <constraint firstItem="wQ0-dD-zUT" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="yzl-Wi-QED"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -22,4 +64,11 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LaunchScreen" width="159.5" height="347.5"/>
+        <image name="schoolLogo" width="216" height="166"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
