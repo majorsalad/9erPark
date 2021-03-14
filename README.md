@@ -1,4 +1,5 @@
 # 9erPark
+<img src = "https://github.com/jlthompson96/9erPark/blob/main/9erPark/Assets.xcassets/images/schoolLogo.png?raw=true" alt="UNCC Logo" height="150px" />
 
 9erPark is an iOS application that allows students at UNC Charlotte to:
 * View live parking stats on campus
