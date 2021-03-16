@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         // Git is confusing
         // Sup Faisal
+        // Sup Joey and Dagim
         // Raplaced line17 code and added images
     }
 
