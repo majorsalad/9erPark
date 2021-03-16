@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         // Sup Faisal
         // Faisal's branch change
         // Sup Joey and Dagim
-        //Dagim is checking the latest version
+        //Dagim is checking the latest version. 
         // Raplaced line17 code and added images
     }
 
