@@ -11,12 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        // Git is confusing
-        // Sup Faisal
-        // Faisal's branch change
-        // Sup Joey and Dagim
-        // Raplaced line17 code and added images
+        // Deleting previous of lines of code for the Github assignment
     }
 
 
