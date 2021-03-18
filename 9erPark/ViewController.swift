@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
             //Removed comments to test pull requests
-        //This is my git immersion assignment. 
     }
 
 
