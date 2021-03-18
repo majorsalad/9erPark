@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Deleting previous of lines of code for the Github assignment
-        //Dagim is testing.
+        //Dagim is testing assignment.
         //rahul comment
         //part 2
     }
