@@ -194,16 +194,33 @@ as parking is reserved for tonight’s game.</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thursday 5:30 - 9:30 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3h-ob-PzH">
+                                        <rect key="frame" x="249" y="96.5" width="120" height="13.5"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="11"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZ0-tt-MxX" userLabel="announcementsButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="385" height="126"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.78823529410000004" green="0.88235294119999996" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="dZ0-tt-MxX" firstAttribute="top" secondItem="pQy-uh-8sG" secondAttribute="top" id="2os-Y6-Ew9"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q3h-ob-PzH" secondAttribute="trailing" constant="16" id="3TI-wd-3ZX"/>
+                                    <constraint firstItem="dZ0-tt-MxX" firstAttribute="centerX" secondItem="pQy-uh-8sG" secondAttribute="centerX" id="ISN-Hk-ioT"/>
+                                    <constraint firstItem="dZ0-tt-MxX" firstAttribute="centerY" secondItem="pQy-uh-8sG" secondAttribute="centerY" id="Iy2-D7-pJx"/>
                                     <constraint firstItem="aXS-Ir-aLx" firstAttribute="top" secondItem="Bzh-UZ-SVC" secondAttribute="bottom" constant="5" id="KsI-vz-Mve"/>
+                                    <constraint firstAttribute="trailing" secondItem="dZ0-tt-MxX" secondAttribute="trailing" id="R9e-3e-NC5"/>
                                     <constraint firstAttribute="width" constant="385" id="Tcs-15-YGj"/>
+                                    <constraint firstItem="dZ0-tt-MxX" firstAttribute="leading" secondItem="pQy-uh-8sG" secondAttribute="leading" id="WcG-Fr-0Ui"/>
                                     <constraint firstItem="Bzh-UZ-SVC" firstAttribute="top" secondItem="pQy-uh-8sG" secondAttribute="top" constant="33" id="au0-Kb-rTz"/>
                                     <constraint firstItem="FWG-N8-Iwb" firstAttribute="leading" secondItem="pQy-uh-8sG" secondAttribute="leading" constant="18" id="bE4-gE-9RB"/>
                                     <constraint firstItem="aXS-Ir-aLx" firstAttribute="leading" secondItem="FWG-N8-Iwb" secondAttribute="trailing" constant="9" id="c6a-oj-fPZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="dZ0-tt-MxX" secondAttribute="bottom" id="hR1-hm-YFY"/>
                                     <constraint firstItem="Bzh-UZ-SVC" firstAttribute="leading" secondItem="FWG-N8-Iwb" secondAttribute="trailing" constant="9" id="lK6-qS-f2Y"/>
                                     <constraint firstAttribute="height" constant="126" id="le3-2d-5qU"/>
+                                    <constraint firstItem="Q3h-ob-PzH" firstAttribute="top" secondItem="aXS-Ir-aLx" secondAttribute="bottom" constant="16" id="ubY-Jx-442"/>
                                     <constraint firstItem="FWG-N8-Iwb" firstAttribute="centerY" secondItem="pQy-uh-8sG" secondAttribute="centerY" id="zuB-9k-2Wa"/>
                                 </constraints>
                             </view>
