@@ -9,9 +9,12 @@ import UIKit
 
 class HomePage: UIViewController {
 
+    @IBOutlet weak var findOptimalButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       // 
+       //
+        findOptimalButton.layer.cornerRadius = 19
     }
 
 
