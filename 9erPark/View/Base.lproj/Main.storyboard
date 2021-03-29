@@ -399,36 +399,33 @@ as parking is reserved for tonight’s game.</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDM-WO-VuT">
                                 <rect key="frame" x="33.5" y="381" width="347" height="113"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="UXY-zy-Kcp">
-                                        <rect key="frame" x="98.5" y="40" width="150" height="33"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deck Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdg-Ip-Fgs">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="22"/>
-                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5qo-o7-8if">
-                                                <rect key="frame" x="0.0" y="29" width="150" height="4"/>
-                                            </progressView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="jdg-Ip-Fgs" firstAttribute="leading" secondItem="UXY-zy-Kcp" secondAttribute="leading" id="z3Z-Pj-CjO"/>
-                                        </constraints>
-                                    </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tix-Q5-Xt2">
                                         <rect key="frame" x="222" y="88" width="26" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deck Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdg-Ip-Fgs">
+                                        <rect key="frame" x="128" y="45.5" width="91.5" height="22"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5qo-o7-8if">
+                                        <rect key="frame" x="98" y="76" width="150" height="4"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="Gav-t2-cio"/>
+                                        </constraints>
+                                    </progressView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="jdg-Ip-Fgs" firstAttribute="centerY" secondItem="xDM-WO-VuT" secondAttribute="centerY" id="5Vw-TY-eXs"/>
+                                    <constraint firstItem="5qo-o7-8if" firstAttribute="leading" secondItem="xDM-WO-VuT" secondAttribute="leading" constant="98" id="AQc-NN-ntd"/>
                                     <constraint firstAttribute="width" constant="347" id="AzN-3a-nZQ"/>
-                                    <constraint firstItem="UXY-zy-Kcp" firstAttribute="centerX" secondItem="xDM-WO-VuT" secondAttribute="centerX" id="EAr-9i-U1f"/>
-                                    <constraint firstItem="UXY-zy-Kcp" firstAttribute="centerY" secondItem="xDM-WO-VuT" secondAttribute="centerY" id="GXQ-2m-uOV"/>
+                                    <constraint firstItem="5qo-o7-8if" firstAttribute="top" secondItem="jdg-Ip-Fgs" secondAttribute="bottom" constant="8.5" id="jVH-c8-rMF"/>
                                     <constraint firstAttribute="bottom" secondItem="tix-Q5-Xt2" secondAttribute="bottom" constant="8" id="w2S-c1-yac"/>
+                                    <constraint firstItem="jdg-Ip-Fgs" firstAttribute="centerX" secondItem="xDM-WO-VuT" secondAttribute="centerX" id="xCq-3j-36g"/>
                                     <constraint firstAttribute="trailing" secondItem="tix-Q5-Xt2" secondAttribute="trailing" constant="99" id="ycl-5a-cxQ"/>
                                     <constraint firstAttribute="height" constant="113" id="zO9-S5-WAa"/>
                                 </constraints>
@@ -535,11 +532,12 @@ dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla par
         <!--Navigation Controller-->
         <scene sceneID="ZNK-eh-Ob6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" navigationBarHidden="YES" hidesBarsOnSwipe="YES" id="cya-QF-H9L" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" hidesBarsOnSwipe="YES" id="cya-QF-H9L" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0MK-R2-ciq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
