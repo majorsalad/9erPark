@@ -388,7 +388,10 @@ as parking is reserved for tonight’s game.</string>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Optimal Deck" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JC2-8d-hZq">
-                                <rect key="frame" x="163" y="294" width="88" height="58"/>
+                                <rect key="frame" x="138" y="294" width="138" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="M3d-fm-E5f"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -446,6 +449,10 @@ as parking is reserved for tonight’s game.</string>
                     </view>
                     <navigationItem key="navigationItem" id="pyJ-2X-FIM"/>
                     <connections>
+                        <outlet property="buildingLabel" destination="9vI-9U-JRe" id="W3C-yV-bc5"/>
+                        <outlet property="deckLabel" destination="jdg-Ip-Fgs" id="unj-0o-oFs"/>
+                        <outlet property="percentLabel" destination="tix-Q5-Xt2" id="bx8-fS-EVn"/>
+                        <outlet property="progressBar" destination="5qo-o7-8if" id="aGL-49-XMj"/>
                         <segue destination="wWK-1E-MAL" kind="show" identifier="goToParkingPage" id="Mgo-Rf-m7W"/>
                     </connections>
                 </viewController>

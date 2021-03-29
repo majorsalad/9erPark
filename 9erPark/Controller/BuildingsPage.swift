@@ -35,7 +35,7 @@ class BuildingsPage : UIViewController, UITableViewDelegate, UITableViewDataSour
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToOptimalPage" {
             let destinationVC = segue.destination as! OptimalPage
-//            destinationVC.buildingName = buildingName
+            destinationVC.buildingName = buildingsArray[myIndex]
         }
     }
 }
