@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cya-QF-H9L">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -57,6 +57,9 @@
                                     <color key="titleColor" systemColor="labelColor"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.36448523116438358" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="kGI-ja-Kef" kind="show" id="C9Q-Rv-9vj"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dx-TK-hnk">
                                 <rect key="frame" x="94" y="601" width="42" height="21"/>
@@ -242,13 +245,14 @@ as parking is reserved for tonight’s game.</string>
                             <constraint firstItem="WRl-2t-bDH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gZp-be-JoZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="50T-EG-eSV"/>
                     <connections>
                         <outlet property="findOptimalButton" destination="WRl-2t-bDH" id="NJi-5f-CBN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
+            <point key="canvasLocation" x="1042.0289855072465" y="109.82142857142857"/>
         </scene>
         <!--Buildings Page-->
         <scene sceneID="zet-2k-rnM">
@@ -281,6 +285,20 @@ as parking is reserved for tonight’s game.</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="480" id="bwI-4O-zoM"/>
                                 </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="uNb-8M-cOS">
+                                        <rect key="frame" x="0.0" y="28" width="350" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uNb-8M-cOS" id="gNP-CW-GHC">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="kGI-ja-Kef" id="voE-aE-e5T"/>
+                                    <outlet property="delegate" destination="kGI-ja-Kef" id="2fU-oh-kEm"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dRk-L6-ujc"/>
@@ -296,10 +314,14 @@ as parking is reserved for tonight’s game.</string>
                             <constraint firstItem="AjU-iH-Fu9" firstAttribute="centerX" secondItem="rKa-3p-vOh" secondAttribute="centerX" id="o8R-sv-gLz"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="aUL-KB-sRa"/>
+                    <connections>
+                        <segue destination="bbE-ik-jAA" kind="show" identifier="goToOptimalPage" id="FDQ-Jl-dy4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gg-BO-dF2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1008.6956521739131" y="114.50892857142857"/>
+            <point key="canvasLocation" x="1918.840579710145" y="114.50892857142857"/>
         </scene>
         <!--Parking Page-->
         <scene sceneID="ezC-7x-8GV">
@@ -311,6 +333,7 @@ as parking is reserved for tonight’s game.</string>
                         <viewLayoutGuide key="safeArea" id="a08-Oj-5cV"/>
                         <color key="backgroundColor" red="0.99978190659999999" green="0.99657779930000001" blue="0.96078008410000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="I1h-ea-5CM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhD-BO-0On" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -338,13 +361,97 @@ as parking is reserved for tonight’s game.</string>
                     <view key="view" contentMode="scaleToFill" id="rA8-7s-vnM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qzo-Yf-Jf6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Building Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vI-9U-JRe">
+                                        <rect key="frame" x="16" y="89" width="222.5" height="41"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="9vI-9U-JRe" secondAttribute="bottom" constant="10" id="N29-aM-nK8"/>
+                                    <constraint firstItem="9vI-9U-JRe" firstAttribute="leading" secondItem="Qzo-Yf-Jf6" secondAttribute="leading" constant="16" id="NkU-WA-CuZ"/>
+                                    <constraint firstAttribute="width" constant="414" id="qmL-ge-Kyy"/>
+                                    <constraint firstAttribute="height" constant="140" id="vO5-mJ-Y69"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GCe-5l-riN">
+                                <rect key="frame" x="127" y="172" width="160" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="7jt-1E-Ihg"/>
+                                    <constraint firstAttribute="height" constant="96" id="YmT-dd-qp4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Optimal Deck" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JC2-8d-hZq">
+                                <rect key="frame" x="163" y="294" width="88" height="58"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDM-WO-VuT">
+                                <rect key="frame" x="33.5" y="381" width="347" height="113"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="UXY-zy-Kcp">
+                                        <rect key="frame" x="98.5" y="40" width="150" height="33"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deck Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdg-Ip-Fgs">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="22"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5qo-o7-8if">
+                                                <rect key="frame" x="0.0" y="29" width="150" height="4"/>
+                                            </progressView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="jdg-Ip-Fgs" firstAttribute="leading" secondItem="UXY-zy-Kcp" secondAttribute="leading" id="z3Z-Pj-CjO"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tix-Q5-Xt2">
+                                        <rect key="frame" x="222" y="88" width="26" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="347" id="AzN-3a-nZQ"/>
+                                    <constraint firstItem="UXY-zy-Kcp" firstAttribute="centerX" secondItem="xDM-WO-VuT" secondAttribute="centerX" id="EAr-9i-U1f"/>
+                                    <constraint firstItem="UXY-zy-Kcp" firstAttribute="centerY" secondItem="xDM-WO-VuT" secondAttribute="centerY" id="GXQ-2m-uOV"/>
+                                    <constraint firstAttribute="bottom" secondItem="tix-Q5-Xt2" secondAttribute="bottom" constant="8" id="w2S-c1-yac"/>
+                                    <constraint firstAttribute="trailing" secondItem="tix-Q5-Xt2" secondAttribute="trailing" constant="99" id="ycl-5a-cxQ"/>
+                                    <constraint firstAttribute="height" constant="113" id="zO9-S5-WAa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="oLG-of-kma"/>
                         <color key="backgroundColor" red="0.99978190659999999" green="0.99657779930000001" blue="0.96078008410000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="xDM-WO-VuT" firstAttribute="centerX" secondItem="rA8-7s-vnM" secondAttribute="centerX" id="CrZ-1Y-FwM"/>
+                            <constraint firstItem="Qzo-Yf-Jf6" firstAttribute="top" secondItem="rA8-7s-vnM" secondAttribute="top" id="Lz7-Df-RLC"/>
+                            <constraint firstItem="Qzo-Yf-Jf6" firstAttribute="leading" secondItem="oLG-of-kma" secondAttribute="leading" id="WjN-VW-K0Q"/>
+                            <constraint firstItem="JC2-8d-hZq" firstAttribute="top" secondItem="GCe-5l-riN" secondAttribute="bottom" constant="26" id="dvH-qn-pdu"/>
+                            <constraint firstItem="GCe-5l-riN" firstAttribute="centerX" secondItem="rA8-7s-vnM" secondAttribute="centerX" id="pPz-9a-Q38"/>
+                            <constraint firstItem="GCe-5l-riN" firstAttribute="top" secondItem="Qzo-Yf-Jf6" secondAttribute="bottom" constant="32" id="qm5-6i-duz"/>
+                            <constraint firstItem="JC2-8d-hZq" firstAttribute="centerX" secondItem="rA8-7s-vnM" secondAttribute="centerX" id="yzK-J4-UPZ"/>
+                            <constraint firstItem="xDM-WO-VuT" firstAttribute="top" secondItem="JC2-8d-hZq" secondAttribute="bottom" constant="29" id="zWi-7X-JX5"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="pyJ-2X-FIM"/>
+                    <connections>
+                        <segue destination="wWK-1E-MAL" kind="show" identifier="goToParkingPage" id="Mgo-Rf-m7W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2LW-1C-ikm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1990" y="115"/>
+            <point key="canvasLocation" x="2900" y="114.50892857142857"/>
         </scene>
         <!--About Page-->
         <scene sceneID="rBs-Gz-raJ">
@@ -416,7 +523,26 @@ dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla par
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VUI-X0-g3g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3008.6956521739135" y="114.50892857142857"/>
+            <point key="canvasLocation" x="3918.8405797101454" y="114.50892857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZNK-eh-Ob6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" navigationBarHidden="YES" hidesBarsOnSwipe="YES" id="cya-QF-H9L" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0MK-R2-ciq">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="SMj-2w-MKZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Bp-rw-yDT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
         </scene>
     </scenes>
     <resources>

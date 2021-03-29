@@ -13,7 +13,7 @@ class HomePage: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       //
+        //edgesForExtendedLayout = []
         findOptimalButton.layer.cornerRadius = 19
     }
 
