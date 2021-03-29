@@ -42,6 +42,9 @@
 		C4D943F125FBD89500474568 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4D943D525FBD89500474568 /* Lato-ThinItalic.ttf */; };
 		C4D943F225FBD89500474568 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4D943D525FBD89500474568 /* Lato-ThinItalic.ttf */; };
 		C4D943F325FBD89500474568 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4D943D525FBD89500474568 /* Lato-ThinItalic.ttf */; };
+		C4FC742726124F2F00390FA3 /* ParkingDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FC742626124F2F00390FA3 /* ParkingDeck.swift */; };
+		C4FC742F26124F4D00390FA3 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FC742E26124F4D00390FA3 /* Deck.swift */; };
+		C4FC743426124F6500390FA3 /* ParkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FC743326124F6500390FA3 /* ParkingManager.swift */; };
 		FBD59E8425F7F5B500285A47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD59E8325F7F5B500285A47 /* AppDelegate.swift */; };
 		FBD59E8625F7F5B500285A47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD59E8525F7F5B500285A47 /* SceneDelegate.swift */; };
 		FBD59E8825F7F5B500285A47 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD59E8725F7F5B500285A47 /* HomePage.swift */; };
@@ -85,6 +88,9 @@
 		C4D943D325FBD89500474568 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
 		C4D943D425FBD89500474568 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
 		C4D943D525FBD89500474568 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		C4FC742626124F2F00390FA3 /* ParkingDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingDeck.swift; sourceTree = "<group>"; };
+		C4FC742E26124F4D00390FA3 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		C4FC743326124F6500390FA3 /* ParkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingManager.swift; sourceTree = "<group>"; };
 		FBD59E8025F7F5B500285A47 /* 9erPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 9erPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD59E8325F7F5B500285A47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD59E8525F7F5B500285A47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,13 +132,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C40B8CE4260BC3C1004FB775 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		C40B8CE5260BC3CE004FB775 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +170,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		C4FC742526124F0400390FA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4FC742626124F2F00390FA3 /* ParkingDeck.swift */,
+				C4FC742E26124F4D00390FA3 /* Deck.swift */,
+				C4FC743326124F6500390FA3 /* ParkingManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FBD59E7725F7F5B500285A47 = {
 			isa = PBXGroup;
 			children = (
@@ -194,8 +203,8 @@
 		FBD59E8225F7F5B500285A47 /* 9erPark */ = {
 			isa = PBXGroup;
 			children = (
+				C4FC742526124F0400390FA3 /* Model */,
 				C40B8CE6260BC3D9004FB775 /* Controller */,
-				C40B8CE4260BC3C1004FB775 /* Model */,
 				C40B8CE5260BC3CE004FB775 /* View */,
 				FBD59E8325F7F5B500285A47 /* AppDelegate.swift */,
 				FBD59E8525F7F5B500285A47 /* SceneDelegate.swift */,
@@ -387,11 +396,14 @@
 			files = (
 				FBD59E8825F7F5B500285A47 /* HomePage.swift in Sources */,
 				C40B8CEE260BC449004FB775 /* BuildingsPage.swift in Sources */,
+				C4FC742F26124F4D00390FA3 /* Deck.swift in Sources */,
 				C40B8CFD260BC49C004FB775 /* ParkingPage.swift in Sources */,
+				C4FC743426124F6500390FA3 /* ParkingManager.swift in Sources */,
 				C40B8CF8260BC479004FB775 /* AboutPage.swift in Sources */,
 				FBD59E8425F7F5B500285A47 /* AppDelegate.swift in Sources */,
 				FBD59E8625F7F5B500285A47 /* SceneDelegate.swift in Sources */,
 				C40B8D02260BC4B2004FB775 /* LiveFeedPage.swift in Sources */,
+				C4FC742726124F2F00390FA3 /* ParkingDeck.swift in Sources */,
 				C40B8CF3260BC46B004FB775 /* OptimalPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
