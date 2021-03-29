@@ -257,14 +257,49 @@ as parking is reserved for tonight’s game.</string>
                     <view key="view" contentMode="scaleToFill" id="rKa-3p-vOh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AjU-iH-Fu9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Building Select" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3f-UC-ZJX">
+                                        <rect key="frame" x="16" y="89" width="225.5" height="41"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="a3f-UC-ZJX" firstAttribute="leading" secondItem="AjU-iH-Fu9" secondAttribute="leading" constant="16" id="C6Q-W5-AEY"/>
+                                    <constraint firstAttribute="height" constant="140" id="KtA-oe-DS0"/>
+                                    <constraint firstAttribute="bottom" secondItem="a3f-UC-ZJX" secondAttribute="bottom" constant="10" id="WV5-Xt-rb2"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LOG-Yx-d7Y">
+                                <rect key="frame" x="32" y="164" width="350" height="480"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="480" id="bwI-4O-zoM"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dRk-L6-ujc"/>
                         <color key="backgroundColor" red="0.99980384109999998" green="0.99652248619999995" blue="0.96470218900000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <accessibility key="accessibilityConfiguration" label="Live Parking"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="LOG-Yx-d7Y" secondAttribute="trailing" constant="12" id="0VS-Yz-sSL"/>
+                            <constraint firstItem="AjU-iH-Fu9" firstAttribute="leading" secondItem="rKa-3p-vOh" secondAttribute="leading" id="0Wd-dI-gsA"/>
+                            <constraint firstAttribute="trailing" secondItem="AjU-iH-Fu9" secondAttribute="trailing" id="7BJ-8W-sHy"/>
+                            <constraint firstItem="LOG-Yx-d7Y" firstAttribute="top" secondItem="AjU-iH-Fu9" secondAttribute="bottom" constant="24" id="AdV-T2-ezJ"/>
+                            <constraint firstItem="AjU-iH-Fu9" firstAttribute="top" secondItem="rKa-3p-vOh" secondAttribute="top" id="BQd-4b-A8r"/>
+                            <constraint firstItem="LOG-Yx-d7Y" firstAttribute="leading" secondItem="rKa-3p-vOh" secondAttribute="leadingMargin" constant="12" id="Twd-L9-YIW"/>
+                            <constraint firstItem="AjU-iH-Fu9" firstAttribute="centerX" secondItem="rKa-3p-vOh" secondAttribute="centerX" id="o8R-sv-gLz"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gg-BO-dF2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1009" y="115"/>
+            <point key="canvasLocation" x="1008.6956521739131" y="114.50892857142857"/>
         </scene>
         <!--Parking Page-->
         <scene sceneID="ezC-7x-8GV">
