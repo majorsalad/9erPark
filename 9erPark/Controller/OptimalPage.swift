@@ -35,17 +35,6 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
                     print(parkingDict["CD VS"]!)
                     self.firstClosest = "CD VS"
                     self.secondClosest = "WEST"
-                    
-                    if(parkingDict[self.firstClosest!]!.percent > parkingDict[self.secondClosest!]!.percent){
-                        self.parkingDeck = parkingDict["CD VS"]?.name
-                        self.percentage = Float(parkingDict["CD VS"]!.percent * 100)
-                        self.percentageAsString = String(format: "%.1f", Float(self.percentage!)) + "%"
-                    } else {
-                        self.parkingDeck = parkingDict["WEST"]?.name
-                        self.percentage = Float(parkingDict["WEST"]!.percent * 100)
-                        self.percentageAsString = String(format: "%.1f", Float(self.percentage!)) + "%"
-                    }
-                    
                 case "Barnard":
                     print(parkingDict["WEST"]!)
                 case "Colvard":
@@ -59,10 +48,29 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
                 default:
                     print(parkingDict["CD VS"]!)
                 }
-                
+            
+                let parking1: ParkingDeck = parkingDict[self.firstClosest!]!
+                let parking2: ParkingDeck = parkingDict[self.secondClosest!]!
+                self.selectDeck(parking1: parking1, parking2: parking2)
+            
                 self.deckLabel.text = self.parkingDeck
                 self.progressBar.progress = self.percentage ?? 0
                 self.percentLabel.text = self.percentageAsString
+        }
+        
+    }
+    
+    //choose the better deck
+    func selectDeck(parking1: ParkingDeck, parking2: ParkingDeck) {
+
+        if(parking1.percent > parking2.percent) {
+            self.parkingDeck = parking1.name
+            self.percentage = Float(parking1.percent * 100)
+            self.percentageAsString = String(format: "%.1f", Float(self.percentage!)) + "%"
+        } else {
+            self.parkingDeck = parking2.name
+            self.percentage = Float(parking2.percent * 100)
+            self.percentageAsString = String(format: "%.1f", Float(self.percentage!)) + "%"
         }
         
     }
