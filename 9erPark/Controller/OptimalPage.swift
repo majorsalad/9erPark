@@ -32,19 +32,31 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
         DispatchQueue.main.async {
             switch self.buildingName {
                 case "Atkins":
-                    print(parkingDict["CD VS"]!)
                     self.firstClosest = "CD VS"
                     self.secondClosest = "WEST"
                 case "Barnard":
-                    print(parkingDict["WEST"]!)
+                    //East Deck 1 (F/S), 2/3(student), cone deck(F/S)
+                   //Next closest student is probably union
+                    self.firstClosest = "ED2/3"
+                    self.secondClosest = "UDU"
                 case "Colvard":
-                    print(parkingDict["WEST"]!)
+                    //Cone deck  1/2(F/S), east deck 1(F/S), 2/3, west deck(student)
+                    self.firstClosest="ED2/3"
+                    self.secondClosest = "WEST"
                 case "Denny":
-                    print(parkingDict["CD VS"]!)
+                    //East deck 1(F/S), 2/3(Student), cone deck 1/2(F/S)
+                    //next closest is union or west (about .8 miles)
+                    self.firstClosest = "ED2/3"
+                    self.secondClosest = "WEST"
                 case "Fretwell":
-                    print(parkingDict["CD VS"]!)
+                    //East deck 1(F/S) 2/3, cone deck 1/2
+                    //next closest union, west, or south village (.8 miles)
+                    self.firstClosest="ED2/3"
+                    self.secondClosest = "WEST"
                 case "Woodward":
-                    print(parkingDict["CD VS"]!)
+                    //West deck, union(Student), cone 2, 1, south village (student)
+                    self.firstClosest="WEST"
+                    self.secondClosest = "SOUTH"
                 default:
                     print(parkingDict["CD VS"]!)
                 }
