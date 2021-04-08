@@ -110,6 +110,9 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6e-FO-UmH" userLabel="livePercentagesButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="163" height="122"/>
+                                                <connections>
+                                                    <action selector="liveParkingPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BPA-0d-vXe"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.78823529410000004" green="0.88235294119999996" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -248,6 +251,7 @@ as parking is reserved for tonight’s game.</string>
                     <navigationItem key="navigationItem" id="50T-EG-eSV"/>
                     <connections>
                         <outlet property="findOptimalButton" destination="WRl-2t-bDH" id="NJi-5f-CBN"/>
+                        <segue destination="xCJ-my-A1O" kind="show" identifier="goToPercentages" id="KRN-OX-S2S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -266,7 +270,7 @@ as parking is reserved for tonight’s game.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Building Select" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3f-UC-ZJX">
-                                        <rect key="frame" x="16" y="89" width="225.5" height="41"/>
+                                        <rect key="frame" x="16" y="90" width="228" height="40"/>
                                         <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="34"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -346,9 +350,82 @@ as parking is reserved for tonight’s game.</string>
                     <view key="view" contentMode="scaleToFill" id="XaF-Hw-Uw6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWS-Ph-nFP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Decks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DU2-o7-SYL" userLabel="pageTitle">
+                                        <rect key="frame" x="16" y="89" width="217" height="41"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="DU2-o7-SYL" secondAttribute="bottom" constant="10" id="LZt-cJ-LRu"/>
+                                    <constraint firstAttribute="height" constant="140" id="lyx-zv-CQY"/>
+                                    <constraint firstItem="DU2-o7-SYL" firstAttribute="leading" secondItem="RWS-Ph-nFP" secondAttribute="leading" constant="16" id="o5Q-Ex-A6Q"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DU2-o7-SYL" secondAttribute="trailing" constant="20" symbolic="YES" id="u6N-Q5-JCj"/>
+                                    <constraint firstAttribute="bottom" secondItem="DU2-o7-SYL" secondAttribute="bottom" constant="10" id="zuy-zU-ghm"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1U-Js-ks9" userLabel="deck1Name">
+                                <rect key="frame" x="41" y="155" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfc-og-cif" userLabel="bar1Bg">
+                                <rect key="frame" x="32" y="180" width="253" height="33"/>
+                                <color key="backgroundColor" red="0.76862745098039209" green="0.76862745098039209" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="BR5-Z8-uA9"/>
+                                    <constraint firstAttribute="width" constant="253" id="Ywy-lF-yeM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0K1-zP-7Ys" userLabel="progressBar1">
+                                <rect key="frame" x="32" y="180" width="150" height="33"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--% Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kc6-NP-TvS" userLabel="percent1Label">
+                                        <rect key="frame" x="29" y="6" width="92" height="20"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.50196078431372548" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Kc6-NP-TvS" firstAttribute="top" secondItem="0K1-zP-7Ys" secondAttribute="top" constant="6" id="1G8-Sl-5hg"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kc6-NP-TvS" secondAttribute="trailing" constant="29" id="6Ql-x3-UEn"/>
+                                    <constraint firstItem="Kc6-NP-TvS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0K1-zP-7Ys" secondAttribute="leading" constant="20" symbolic="YES" id="BxO-f3-cP9"/>
+                                    <constraint firstAttribute="width" constant="150" id="GRL-j2-D17"/>
+                                    <constraint firstAttribute="height" constant="33" id="xO4-4y-dB9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Lh0-jw-cNd"/>
                         <color key="backgroundColor" red="0.99976009129999999" green="0.996632874" blue="0.95685786009999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Bfc-og-cif" firstAttribute="top" secondItem="h1U-Js-ks9" secondAttribute="bottom" constant="4" id="5Uq-6A-F9G"/>
+                            <constraint firstItem="h1U-Js-ks9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Lh0-jw-cNd" secondAttribute="leading" id="CF1-6i-7dD"/>
+                            <constraint firstAttribute="trailing" secondItem="RWS-Ph-nFP" secondAttribute="trailing" id="LK4-Qo-5eE"/>
+                            <constraint firstItem="0K1-zP-7Ys" firstAttribute="leading" secondItem="XaF-Hw-Uw6" secondAttribute="leading" constant="32" id="TNd-0E-f1w"/>
+                            <constraint firstItem="RWS-Ph-nFP" firstAttribute="top" secondItem="XaF-Hw-Uw6" secondAttribute="top" id="c7Z-Kj-psO"/>
+                            <constraint firstItem="h1U-Js-ks9" firstAttribute="top" secondItem="RWS-Ph-nFP" secondAttribute="bottom" constant="15" id="cwv-gs-ysN"/>
+                            <constraint firstItem="Lh0-jw-cNd" firstAttribute="trailing" secondItem="h1U-Js-ks9" secondAttribute="trailing" constant="331" id="cxp-4q-5bu"/>
+                            <constraint firstItem="Bfc-og-cif" firstAttribute="leading" secondItem="XaF-Hw-Uw6" secondAttribute="leading" constant="32" id="iV4-OQ-A0p"/>
+                            <constraint firstItem="0K1-zP-7Ys" firstAttribute="top" secondItem="h1U-Js-ks9" secondAttribute="bottom" constant="4" id="p0I-Qt-bEy"/>
+                            <constraint firstItem="RWS-Ph-nFP" firstAttribute="leading" secondItem="XaF-Hw-Uw6" secondAttribute="leading" id="sdB-Ai-Bb8"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="LZB-DS-OGE"/>
+                    <connections>
+                        <outlet property="deck1Label" destination="h1U-Js-ks9" id="Yhd-A9-jbk"/>
+                        <outlet property="percent1Label" destination="Kc6-NP-TvS" id="pdm-Gw-XsK"/>
+                        <outlet property="progressBarLabel" destination="0K1-zP-7Ys" id="teR-Ka-14l"/>
+                        <outlet property="progressBarWidth" destination="GRL-j2-D17" id="hac-vn-ku2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hjx-Wz-KwZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
