@@ -8,6 +8,7 @@
 import UIKit
 
 class OptimalPage : UIViewController, ParkingManagerDelegate {
+    var minCap = 0.4 //If a deck is less than 70% available, recommend its neighbor
     
     var buildingName : String?
     var parkingManager = ParkingManager()
@@ -31,34 +32,71 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
     func didUpdateParking(_ parkingManager: ParkingManager, parkingDict: Dictionary<String, ParkingDeck>) {
         DispatchQueue.main.async {
             switch self.buildingName {
-                case "Atkins":
-                    self.firstClosest = "CD VS"
-                    self.secondClosest = "WEST"
-                case "Barnard":
-                    //East Deck 1 (F/S), 2/3(student), cone deck(F/S)
-                   //Next closest student is probably union
-                    self.firstClosest = "ED2/3"
-                    self.secondClosest = "UDU"
-                case "Colvard":
-                    //Cone deck  1/2(F/S), east deck 1(F/S), 2/3, west deck(student)
-                    self.firstClosest="ED2/3"
-                    self.secondClosest = "WEST"
-                case "Denny":
-                    //East deck 1(F/S), 2/3(Student), cone deck 1/2(F/S)
-                    //next closest is union or west (about .8 miles)
-                    self.firstClosest = "ED2/3"
-                    self.secondClosest = "WEST"
-                case "Fretwell":
-                    //East deck 1(F/S) 2/3, cone deck 1/2
-                    //next closest union, west, or south village (.8 miles)
-                    self.firstClosest="ED2/3"
-                    self.secondClosest = "WEST"
-                case "Woodward":
-                    //West deck, union(Student), cone 2, 1, south village (student)
-                    self.firstClosest="WEST"
-                    self.secondClosest = "SOUTH"
-                default:
-                    print(parkingDict["CD VS"]!)
+            case "Athletic Storage":
+                self.firstClosest = "WEST"
+                self.secondClosest = "UDU"
+            case "Atkins":
+                self.firstClosest = "CD VS"
+                self.secondClosest = "WEST"
+            case "Auxiliary Services Building":
+                self.firstClosest = "ED2/3"
+                self.secondClosest = "UDU"
+            case "Barnard":
+                //East Deck 1 (F/S), 2/3(student), cone deck(F/S)
+               //Next closest student is probably union
+                self.firstClosest = "ED2/3"
+                self.secondClosest = "UDU"
+            case "Barnhardt Student Activity Center":
+                self.firstClosest = "CD VS"
+                self.secondClosest = "WEST"
+            case "Baseball Indool Training Facility":
+                self.firstClosest = "WEST"
+                self.secondClosest = "UDU"
+            case "Belk Gymnasium":
+                self.firstClosest = "WEST"
+                self.secondClosest = "UDU"
+            case "Belk Hall":
+                self.firstClosest = "UDU"
+                self.secondClosest = "NORTH"
+            case "BES Recycling Facility":
+                self.firstClosest = "NORTH"
+                self.secondClosest = "UDU"
+            case "Bioinformatics":
+                self.firstClosest = "UDU"
+                self.secondClosest = "WEST"
+            case "Bissell House":
+                self.firstClosest = "SOUTH"
+                self.secondClosest = "WEST"
+            case "Burson":
+                self.firstClosest = "UDU"
+                self.secondClosest = "CD VS"
+            case "Cafeteria Activities Building":
+                self.firstClosest = "ED2/3"
+                self.secondClosest = "NORTH"
+            case "Cameron Hall":
+                self.firstClosest = "UDU"
+                self.secondClosest = "CD VS"
+                
+            case "Colvard":
+                //Cone deck  1/2(F/S), east deck 1(F/S), 2/3, west deck(student)
+                self.firstClosest="ED2/3"
+                self.secondClosest = "WEST"
+            case "Denny":
+                //East deck 1(F/S), 2/3(Student), cone deck 1/2(F/S)
+                //next closest is union or west (about .8 miles)
+                self.firstClosest = "ED2/3"
+                self.secondClosest = "WEST"
+            case "Fretwell":
+                //East deck 1(F/S) 2/3, cone deck 1/2
+                //next closest union, west, or south village (.8 miles)
+                self.firstClosest="ED2/3"
+                self.secondClosest = "WEST"
+            case "Woodward":
+                //West deck, union(Student), cone 2, 1, south village (student)
+                self.firstClosest="WEST"
+                self.secondClosest = "SOUTH"
+            default:
+                print(parkingDict["CD VS"]!)
                 }
             
                 let parking1: ParkingDeck = parkingDict[self.firstClosest!]!
@@ -74,16 +112,19 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
     
     //choose the better deck
     func selectDeck(parking1: ParkingDeck, parking2: ParkingDeck) {
-
-        if(parking1.percent > parking2.percent) {
-            self.parkingDeck = parking1.name
-            self.percentage = Float(parking1.percent * 100)
-            self.percentageAsString = String(format: "%.1f", Float(self.percentage!)) + "%"
-        } else {
+        //return the second deck if the first is starting to fill up
+        if(parking1.percent < minCap && parking2.percent > minCap) {
             self.parkingDeck = parking2.name
             self.percentage = Float(parking2.percent * 100)
             self.percentageAsString = String(format: "%.1f", Float(self.percentage!)) + "%"
+            
+        } else {
+            self.parkingDeck = parking1.name
+            self.percentage = Float(parking1.percent * 100)
+            self.percentageAsString = String(format: "%.1f", Float(self.percentage!)) + "%"
         }
+            
+   
         
     }
     
