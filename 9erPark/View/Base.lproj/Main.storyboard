@@ -985,15 +985,6 @@ dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla par
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mNj-uj-jfy">
-                                <rect key="frame" x="0.0" y="830" width="417" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="" id="YoI-S0-1Fd"/>
-                                    <tabBarItem title="" selectedImage="Live_Parking" id="kcy-TG-GCY"/>
-                                </items>
-                            </tabBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Version 1.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOI-Nd-7Y7">
                                 <rect key="frame" x="176" y="766" width="62" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1032,7 +1023,6 @@ dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla par
         </scene>
     </scenes>
     <resources>
-        <image name="Live_Parking" width="40" height="50"/>
         <image name="car" width="170.5" height="170.5"/>
         <image name="progressIcon" width="170.5" height="170.5"/>
         <image name="roadblock" width="170.5" height="170.5"/>
