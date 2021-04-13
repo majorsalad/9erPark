@@ -77,7 +77,7 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
                 self.firstClosest = "UDU"
                 self.secondClosest = "CD VS"
             case "Carriage House":
-                self.firstClosest= "SOUTH"
+                self.firstClosest = "SOUTH"
                 self.secondClosest = "WEST"
                 
             case "Cato College of Education":
@@ -87,7 +87,7 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
             case "Cato Hall":
                 self.firstClosest = "ED2/3"
                 self.secondClosest = "CD VS"
-            case "Cedar"
+            case "Cedar":
                 self.firstClosest = "NORTH"
                 self.secondClosest = "ED2/3"
                 
