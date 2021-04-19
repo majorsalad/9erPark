@@ -736,40 +736,118 @@ as parking is reserved for tonight’s game.</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0% Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJ9-Uz-wsQ" userLabel="percentLabel1">
+                                                <rect key="frame" x="221" y="10" width="64" height="17"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0% Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvV-wp-aq4" userLabel="percentLabel2">
+                                                <rect key="frame" x="221" y="84" width="64" height="17"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0% Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oax-2k-zWp" userLabel="percentLabel3">
+                                                <rect key="frame" x="221" y="158" width="64" height="17"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0% Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvG-rZ-4c4" userLabel="percentLabel4">
+                                                <rect key="frame" x="221" y="232" width="64" height="17"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0% Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4y-VQ-YB1" userLabel="percentLabel5">
+                                                <rect key="frame" x="221" y="306" width="64" height="17"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0% Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLc-EX-mJb" userLabel="percentLabel6">
+                                                <rect key="frame" x="221" y="380" width="64" height="17"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0% Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khh-U7-UET" userLabel="percentLabel7">
+                                                <rect key="frame" x="221" y="454" width="64" height="17"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0% Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKC-Ke-atn" userLabel="percentLabel8">
+                                                <rect key="frame" x="221" y="528" width="64" height="17"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0% Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Duc-zI-WDs" userLabel="percentLabel9">
+                                                <rect key="frame" x="221" y="602" width="64" height="17"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0% Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvZ-0l-Y2k" userLabel="percentLabel10">
+                                                <rect key="frame" x="221" y="676" width="64" height="17"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.99607843137254903" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="yvV-wp-aq4" firstAttribute="top" secondItem="Ybj-tJ-rEL" secondAttribute="bottom" constant="16" id="161-2h-UMq"/>
                                             <constraint firstItem="qfK-jO-tei" firstAttribute="top" secondItem="0oe-SR-frN" secondAttribute="bottom" constant="41" id="2za-z6-0ss"/>
                                             <constraint firstItem="IKc-eK-7oy" firstAttribute="top" secondItem="jdt-T0-6xI" secondAttribute="bottom" constant="8" id="4a0-AV-Iwu"/>
+                                            <constraint firstAttribute="trailing" secondItem="WLc-EX-mJb" secondAttribute="trailing" constant="129" id="65n-bO-OZ7"/>
                                             <constraint firstItem="OiJ-cT-6GZ" firstAttribute="leading" secondItem="BfR-mm-Z8r" secondAttribute="leading" constant="41" id="6If-p2-lK6"/>
                                             <constraint firstItem="jEQ-Re-cuS" firstAttribute="top" secondItem="qfK-jO-tei" secondAttribute="bottom" constant="41" id="6aQ-Av-Rky"/>
+                                            <constraint firstAttribute="trailing" secondItem="WvZ-0l-Y2k" secondAttribute="trailing" constant="129" id="6gE-mI-SV2"/>
                                             <constraint firstItem="r8X-dd-sjO" firstAttribute="leading" secondItem="BfR-mm-Z8r" secondAttribute="leading" constant="41" id="7Kd-na-WVQ"/>
                                             <constraint firstItem="oXc-pp-QWP" firstAttribute="leading" secondItem="BfR-mm-Z8r" secondAttribute="leading" constant="41" id="AvY-gJ-21y"/>
                                             <constraint firstItem="gQg-Kd-aqe" firstAttribute="leading" secondItem="BfR-mm-Z8r" secondAttribute="leading" constant="32" id="Deh-ad-8dT"/>
                                             <constraint firstItem="5nI-hb-9r1" firstAttribute="top" secondItem="v80-oE-aY0" secondAttribute="bottom" constant="41" id="Dqc-O2-yyl"/>
+                                            <constraint firstItem="Khh-U7-UET" firstAttribute="top" secondItem="Y03-VS-2iu" secondAttribute="bottom" constant="16" id="E3u-48-zWs"/>
                                             <constraint firstItem="v80-oE-aY0" firstAttribute="leading" secondItem="BfR-mm-Z8r" secondAttribute="leading" constant="32" id="ER3-rY-c0U"/>
                                             <constraint firstItem="v80-oE-aY0" firstAttribute="top" secondItem="phf-4g-Nui" secondAttribute="bottom" constant="8" id="Jb8-KH-GPd"/>
                                             <constraint firstItem="jdt-T0-6xI" firstAttribute="leading" secondItem="BfR-mm-Z8r" secondAttribute="leading" constant="41" id="K3l-2j-q4Z"/>
                                             <constraint firstItem="jEQ-Re-cuS" firstAttribute="leading" secondItem="BfR-mm-Z8r" secondAttribute="leading" constant="32" id="LRj-AA-Ov6"/>
                                             <constraint firstItem="Ybj-tJ-rEL" firstAttribute="top" secondItem="BfR-mm-Z8r" secondAttribute="top" constant="35" id="Msr-gF-OIa"/>
+                                            <constraint firstItem="Oax-2k-zWp" firstAttribute="top" secondItem="0oe-SR-frN" secondAttribute="bottom" constant="16" id="PVF-Wp-bVz"/>
                                             <constraint firstItem="gQg-Kd-aqe" firstAttribute="top" secondItem="Sr9-tg-LX5" secondAttribute="bottom" constant="8" id="Pj5-De-St4"/>
                                             <constraint firstItem="qfK-jO-tei" firstAttribute="top" secondItem="r8X-dd-sjO" secondAttribute="bottom" constant="8" id="Pvh-ya-4X7"/>
                                             <constraint firstItem="7JR-94-mo4" firstAttribute="leading" secondItem="BfR-mm-Z8r" secondAttribute="leading" constant="41" id="Rf5-ep-fk2"/>
                                             <constraint firstItem="IKc-eK-7oy" firstAttribute="leading" secondItem="BfR-mm-Z8r" secondAttribute="leading" constant="32" id="RzM-Ij-c46"/>
                                             <constraint firstItem="eUa-no-lwX" firstAttribute="leading" secondItem="BfR-mm-Z8r" secondAttribute="leading" constant="41" id="SMH-dA-qmh"/>
+                                            <constraint firstItem="cJ9-Uz-wsQ" firstAttribute="top" secondItem="BfR-mm-Z8r" secondAttribute="top" constant="10" id="SXB-41-PsO"/>
+                                            <constraint firstItem="Duc-zI-WDs" firstAttribute="top" secondItem="v80-oE-aY0" secondAttribute="bottom" constant="16" id="SYw-cH-ZBN"/>
+                                            <constraint firstAttribute="trailing" secondItem="Duc-zI-WDs" secondAttribute="trailing" constant="129" id="T4j-Se-xoz"/>
                                             <constraint firstItem="Y03-VS-2iu" firstAttribute="top" secondItem="oXc-pp-QWP" secondAttribute="bottom" constant="8" id="TCI-fd-Q65"/>
                                             <constraint firstItem="5nI-hb-9r1" firstAttribute="top" secondItem="eUa-no-lwX" secondAttribute="bottom" constant="8" id="U5e-NN-J9D"/>
                                             <constraint firstItem="0oe-SR-frN" firstAttribute="top" secondItem="cQm-zY-cye" secondAttribute="bottom" constant="8" id="VrT-o7-VdP"/>
                                             <constraint firstItem="0oe-SR-frN" firstAttribute="leading" secondItem="BfR-mm-Z8r" secondAttribute="leading" constant="32" id="X44-RQ-fno"/>
+                                            <constraint firstAttribute="trailing" secondItem="Oax-2k-zWp" secondAttribute="trailing" constant="129" id="X7i-TL-stt"/>
                                             <constraint firstAttribute="height" constant="1200" id="YZo-4D-vgf"/>
+                                            <constraint firstAttribute="trailing" secondItem="cJ9-Uz-wsQ" secondAttribute="trailing" constant="129" id="aWe-e5-kQH"/>
                                             <constraint firstItem="IKc-eK-7oy" firstAttribute="top" secondItem="jEQ-Re-cuS" secondAttribute="bottom" constant="41" id="aj2-Vo-GHP"/>
+                                            <constraint firstAttribute="trailing" secondItem="Khh-U7-UET" secondAttribute="trailing" constant="129" id="bLn-N9-IrU"/>
                                             <constraint firstItem="dTf-16-YHk" firstAttribute="leading" secondItem="BfR-mm-Z8r" secondAttribute="leading" constant="32" id="bQS-d9-FAh"/>
+                                            <constraint firstItem="uKC-Ke-atn" firstAttribute="top" secondItem="gQg-Kd-aqe" secondAttribute="bottom" constant="16" id="ceE-ea-r84"/>
                                             <constraint firstItem="5nI-hb-9r1" firstAttribute="leading" secondItem="BfR-mm-Z8r" secondAttribute="leading" constant="32" id="e9e-j9-BaY"/>
                                             <constraint firstItem="dTf-16-YHk" firstAttribute="top" secondItem="Bfb-eD-Efy" secondAttribute="bottom" constant="8" id="eKU-N4-oC2"/>
                                             <constraint firstItem="Y03-VS-2iu" firstAttribute="top" secondItem="IKc-eK-7oy" secondAttribute="bottom" constant="41" id="ewm-vm-yTs"/>
+                                            <constraint firstItem="lvG-rZ-4c4" firstAttribute="top" secondItem="qfK-jO-tei" secondAttribute="bottom" constant="16" id="fbK-cW-QcS"/>
                                             <constraint firstItem="Sr9-tg-LX5" firstAttribute="leading" secondItem="BfR-mm-Z8r" secondAttribute="leading" constant="41" id="glV-ky-jXZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="D4y-VQ-YB1" secondAttribute="trailing" constant="129" id="hIC-nN-yaz"/>
                                             <constraint firstItem="0oe-SR-frN" firstAttribute="top" secondItem="Ybj-tJ-rEL" secondAttribute="bottom" constant="41" id="jbm-ff-fs8"/>
+                                            <constraint firstItem="WLc-EX-mJb" firstAttribute="top" secondItem="IKc-eK-7oy" secondAttribute="bottom" constant="16" id="k9s-MV-JRu"/>
                                             <constraint firstItem="phf-4g-Nui" firstAttribute="leading" secondItem="BfR-mm-Z8r" secondAttribute="leading" constant="41" id="kkt-eP-2dP"/>
+                                            <constraint firstItem="WvZ-0l-Y2k" firstAttribute="top" secondItem="5nI-hb-9r1" secondAttribute="bottom" constant="16" id="l8Y-Pp-L4e"/>
+                                            <constraint firstAttribute="trailing" secondItem="lvG-rZ-4c4" secondAttribute="trailing" constant="129" id="mRF-6E-Hll"/>
+                                            <constraint firstAttribute="trailing" secondItem="yvV-wp-aq4" secondAttribute="trailing" constant="129" id="n7D-zU-Ohe"/>
                                             <constraint firstItem="cQm-zY-cye" firstAttribute="leading" secondItem="BfR-mm-Z8r" secondAttribute="leading" constant="41" id="n9k-ST-EAd"/>
                                             <constraint firstItem="qfK-jO-tei" firstAttribute="leading" secondItem="BfR-mm-Z8r" secondAttribute="leading" constant="32" id="nUz-41-bkN"/>
                                             <constraint firstItem="gQg-Kd-aqe" firstAttribute="top" secondItem="Y03-VS-2iu" secondAttribute="bottom" constant="41" id="o2N-on-ZDQ"/>
@@ -778,7 +856,9 @@ as parking is reserved for tonight’s game.</string>
                                             <constraint firstItem="jEQ-Re-cuS" firstAttribute="top" secondItem="OiJ-cT-6GZ" secondAttribute="bottom" constant="8" id="s08-iq-t89"/>
                                             <constraint firstItem="Ybj-tJ-rEL" firstAttribute="leading" secondItem="BfR-mm-Z8r" secondAttribute="leading" constant="32" id="sKo-k2-a17"/>
                                             <constraint firstItem="Ybj-tJ-rEL" firstAttribute="top" secondItem="7JR-94-mo4" secondAttribute="bottom" constant="8" id="vIJ-Vu-XAb"/>
+                                            <constraint firstItem="D4y-VQ-YB1" firstAttribute="top" secondItem="jEQ-Re-cuS" secondAttribute="bottom" constant="16" id="vdH-5L-5De"/>
                                             <constraint firstItem="v80-oE-aY0" firstAttribute="top" secondItem="gQg-Kd-aqe" secondAttribute="bottom" constant="41" id="xHS-l3-HFP"/>
+                                            <constraint firstAttribute="trailing" secondItem="uKC-Ke-atn" secondAttribute="trailing" constant="129" id="yZh-tJ-Lxr"/>
                                             <constraint firstItem="Y03-VS-2iu" firstAttribute="leading" secondItem="BfR-mm-Z8r" secondAttribute="leading" constant="32" id="zk3-xh-LqM"/>
                                         </constraints>
                                     </view>
@@ -829,6 +909,16 @@ as parking is reserved for tonight’s game.</string>
                         <outlet property="deck8Label" destination="phf-4g-Nui" id="3ms-WD-0X3"/>
                         <outlet property="deck9BarWidth" destination="aFz-6t-iz2" id="9vx-x8-2uF"/>
                         <outlet property="deck9Label" destination="eUa-no-lwX" id="WyJ-Kb-ObQ"/>
+                        <outlet property="percentLabel1" destination="cJ9-Uz-wsQ" id="dja-gX-L33"/>
+                        <outlet property="percentLabel10" destination="WvZ-0l-Y2k" id="4cv-5v-BLg"/>
+                        <outlet property="percentLabel2" destination="yvV-wp-aq4" id="riP-qh-pJp"/>
+                        <outlet property="percentLabel3" destination="Oax-2k-zWp" id="jMa-84-r4h"/>
+                        <outlet property="percentLabel4" destination="lvG-rZ-4c4" id="21R-az-e0m"/>
+                        <outlet property="percentLabel5" destination="D4y-VQ-YB1" id="LdA-Ml-OwE"/>
+                        <outlet property="percentLabel6" destination="WLc-EX-mJb" id="kaR-ek-CFQ"/>
+                        <outlet property="percentLabel7" destination="Khh-U7-UET" id="sZi-qS-wXL"/>
+                        <outlet property="percentLabel8" destination="uKC-Ke-atn" id="Hdo-8t-FfO"/>
+                        <outlet property="percentLabel9" destination="Duc-zI-WDs" id="6TR-vt-jHF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hjx-Wz-KwZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
