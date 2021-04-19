@@ -226,7 +226,7 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
             case "Witherspoon":
                 self.firstClosest = "NORTH"
                 self.secondClosest = "UDU"
-            case "Woodward":
+            case "Woodward Hall":
                 //West deck, union(Student), cone 2, 1, south village (student)
                 self.firstClosest="WEST"
                 self.secondClosest = "SOUTH"
@@ -250,13 +250,13 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
         //return the second deck if the first is starting to fill up
         if(parking1.percent < minCap && parking2.percent > minCap) {
             self.parkingDeck = parking2.name
-            self.percentage = Float(parking2.percent * 100)
-            self.percentageAsString = String(format: "%.1f", Float(self.percentage!)) + "%"
+            self.percentage = 100 - Float(parking2.percent * 100)
+            self.percentageAsString = String(format: "%.1f", Float(self.percentage!)) + "% Full"
             
         } else {
             self.parkingDeck = parking1.name
-            self.percentage = Float(parking1.percent * 100)
-            self.percentageAsString = String(format: "%.1f", Float(self.percentage!)) + "%"
+            self.percentage = 100 - Float(parking1.percent * 100)
+            self.percentageAsString = String(format: "%.1f", Float(self.percentage!)) + "% Full"
         }
             
    

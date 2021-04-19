@@ -56,34 +56,34 @@ class LiveFeedPage : UIViewController {
             switch i {
             case 1:
                 deck1Label.text = value.name
-                deck1BarWidth.constant = CGFloat(value.percent * 253)
+                deck1BarWidth.constant = CGFloat((1-value.percent) * 253)
             case 2:
                 deck2Label.text = value.name
-                deck2BarWidth.constant = CGFloat(value.percent * 253)
+                deck2BarWidth.constant = CGFloat((1-value.percent) * 253)
             case 3:
                 deck3Label.text = value.name
-                deck3BarWidth.constant = CGFloat(value.percent * 253)
+                deck3BarWidth.constant = CGFloat((1-value.percent) * 253)
             case 4:
                 deck4Label.text = value.name
-                deck4BarWidth.constant = CGFloat(value.percent * 253)
+                deck4BarWidth.constant = CGFloat((1-value.percent) * 253)
             case 5:
                 deck5Label.text = value.name
-                deck5BarWidth.constant = CGFloat(value.percent * 253)
+                deck5BarWidth.constant = CGFloat((1-value.percent) * 253)
             case 6:
                 deck6Label.text = value.name
-                deck6BarWidth.constant = CGFloat(value.percent * 253)
+                deck6BarWidth.constant = CGFloat((1-value.percent) * 253)
             case 7:
                 deck7Label.text = value.name
-                deck7BarWidth.constant = CGFloat(value.percent * 253)
+                deck7BarWidth.constant = CGFloat((1-value.percent) * 253)
             case 8:
                 deck8Label.text = value.name
-                deck8BarWidth.constant = CGFloat(value.percent * 253)
+                deck8BarWidth.constant = CGFloat((1-value.percent) * 253)
             case 9:
                 deck9Label.text = value.name
-                deck9BarWidth.constant = CGFloat(value.percent * 253)
+                deck9BarWidth.constant = CGFloat((1-value.percent) * 253)
             case 10:
                 deck10Label.text = value.name
-                deck10BarWidth.constant = CGFloat(value.percent * 253)
+                deck10BarWidth.constant = CGFloat((1-value.percent) * 253)
             default:
                 print("default")
             }
