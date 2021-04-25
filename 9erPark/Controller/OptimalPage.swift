@@ -22,6 +22,7 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
     @IBOutlet weak var deckLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var percentLabel: UILabel!
+    @IBOutlet weak var deckProgressBar: NSLayoutConstraint!
     
     override func viewDidLoad() {
         buildingLabel.text = buildingName
@@ -239,7 +240,8 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
                 self.selectDeck(parking1: parking1, parking2: parking2)
             
                 self.deckLabel.text = self.parkingDeck
-                self.progressBar.progress = self.percentage ?? 0
+                self.deckProgressBar.constant = CGFloat(self.percentage ?? 0)
+//                self.progressBar.progress = self.percentage ?? 0
                 self.percentLabel.text = self.percentageAsString
         }
         
