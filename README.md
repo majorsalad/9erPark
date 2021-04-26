@@ -2,7 +2,7 @@
 <img src = "https://github.com/jlthompson96/9erPark/blob/main/9erPark/Assets.xcassets/AppIcon.appiconset/1024.png?raw=true" alt="9erPark App Icon" height="250px"/>
 
 ## Purpose
-According to a survey conducted on UNCC students in 2016, over half of the student body has expressed frustration with parking on campus. We recognized that issue and decided to take the initiative by providing commuters with an app that directs them to the optimal deck using distance to their classes and current parking availability. We hope to alleviate traffic on campus, as well as reduce the time in which students spend searching for places to park. With 9erPark, students will never have to waste time finding parking again.
+According to a survey conducted on UNCC students in 2016, over half of the student body have expressed frustration with parking on campus. We recognized that issue and decided to take the initiative by providing commuters with an app that directs them to the optimal deck using distance to their classes and current parking availability. We hope to alleviate traffic on campus, as well as reduce the time in which students spend searching for places to park. With 9erPark, students will never have to waste time finding parking again.
 
 Reference to the survey: 
 https://assessment.uncc.edu/data-visualizations-and-survey-reports/senior-survey/parking-and-transportation
