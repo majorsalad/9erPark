@@ -42,6 +42,11 @@
 		C4D943F125FBD89500474568 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4D943D525FBD89500474568 /* Lato-ThinItalic.ttf */; };
 		C4D943F225FBD89500474568 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4D943D525FBD89500474568 /* Lato-ThinItalic.ttf */; };
 		C4D943F325FBD89500474568 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4D943D525FBD89500474568 /* Lato-ThinItalic.ttf */; };
+		C4D9B09E26377CE900C31D38 /* buildingSelect.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D9B09926377CE800C31D38 /* buildingSelect.png */; };
+		C4D9B09F26377CE900C31D38 /* liveFeed.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D9B09A26377CE800C31D38 /* liveFeed.png */; };
+		C4D9B0A026377CE900C31D38 /* homePage.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D9B09B26377CE800C31D38 /* homePage.png */; };
+		C4D9B0A126377CE900C31D38 /* launchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D9B09C26377CE800C31D38 /* launchScreen.png */; };
+		C4D9B0A226377CE900C31D38 /* optimalDeckPage.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D9B09D26377CE900C31D38 /* optimalDeckPage.png */; };
 		C4FC742726124F2F00390FA3 /* ParkingDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FC742626124F2F00390FA3 /* ParkingDeck.swift */; };
 		C4FC742F26124F4D00390FA3 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FC742E26124F4D00390FA3 /* Deck.swift */; };
 		C4FC743426124F6500390FA3 /* ParkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FC743326124F6500390FA3 /* ParkingManager.swift */; };
@@ -88,6 +93,11 @@
 		C4D943D325FBD89500474568 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
 		C4D943D425FBD89500474568 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
 		C4D943D525FBD89500474568 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		C4D9B09926377CE800C31D38 /* buildingSelect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buildingSelect.png; sourceTree = "<group>"; };
+		C4D9B09A26377CE800C31D38 /* liveFeed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liveFeed.png; sourceTree = "<group>"; };
+		C4D9B09B26377CE800C31D38 /* homePage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homePage.png; sourceTree = "<group>"; };
+		C4D9B09C26377CE800C31D38 /* launchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchScreen.png; sourceTree = "<group>"; };
+		C4D9B09D26377CE900C31D38 /* optimalDeckPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = optimalDeckPage.png; sourceTree = "<group>"; };
 		C4FC742626124F2F00390FA3 /* ParkingDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingDeck.swift; sourceTree = "<group>"; };
 		C4FC742E26124F4D00390FA3 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		C4FC743326124F6500390FA3 /* ParkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingManager.swift; sourceTree = "<group>"; };
@@ -173,6 +183,11 @@
 		C4D9B09526377B5400C31D38 /* projectScreenshots */ = {
 			isa = PBXGroup;
 			children = (
+				C4D9B09926377CE800C31D38 /* buildingSelect.png */,
+				C4D9B09B26377CE800C31D38 /* homePage.png */,
+				C4D9B09C26377CE800C31D38 /* launchScreen.png */,
+				C4D9B09A26377CE800C31D38 /* liveFeed.png */,
+				C4D9B09D26377CE900C31D38 /* optimalDeckPage.png */,
 			);
 			path = projectScreenshots;
 			sourceTree = "<group>";
@@ -345,11 +360,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4D9B09F26377CE900C31D38 /* liveFeed.png in Resources */,
 				FBD59E9025F7F5B600285A47 /* LaunchScreen.storyboard in Resources */,
+				C4D9B09E26377CE900C31D38 /* buildingSelect.png in Resources */,
 				C4D943E225FBD89500474568 /* Lato-Thin.ttf in Resources */,
 				FBD59E8D25F7F5B600285A47 /* Assets.xcassets in Resources */,
+				C4D9B0A026377CE900C31D38 /* homePage.png in Resources */,
 				C4D943DC25FBD89500474568 /* Lato-BlackItalic.ttf in Resources */,
 				C4D943D925FBD89500474568 /* Lato-Regular.ttf in Resources */,
+				C4D9B0A226377CE900C31D38 /* optimalDeckPage.png in Resources */,
+				C4D9B0A126377CE900C31D38 /* launchScreen.png in Resources */,
 				C4D943E825FBD89500474568 /* Lato-Light.ttf in Resources */,
 				C4D943EB25FBD89500474568 /* Lato-Black.ttf in Resources */,
 				C4D943EE25FBD89500474568 /* Lato-LightItalic.ttf in Resources */,
