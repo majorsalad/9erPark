@@ -15,6 +15,16 @@ https://assessment.uncc.edu/data-visualizations-and-survey-reports/senior-survey
 
 ## Images of the Application
 
+* Launch Page
+![launchPageScreenshot](9erPark/projectScreenshots/launchScreen.png)
+* Home Page
+![homepageScreenshot](9erPark/projectScreenshots/homePage.png)
+* Building Select
+![buildingSelectPage](9erPark/projectScreenshots/buildingSelect.png)
+* Optimal Deck Page
+![optimalDeckPage](9erPark/projectScreenshots/optimalDeckPage.png)
+* Parking Percentages Page
+![parkingPercentages](9erPark/projectScreenshots/liveFeed.png)
 
 ## Steps Involved
 * Contact UNC Charlotte PaTS to get permission and access to their parking data (Completed)
