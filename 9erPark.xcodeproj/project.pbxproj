@@ -170,6 +170,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		C4D9B09526377B5400C31D38 /* projectScreenshots */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = projectScreenshots;
+			sourceTree = "<group>";
+		};
 		C4FC742526124F0400390FA3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +210,7 @@
 		FBD59E8225F7F5B500285A47 /* 9erPark */ = {
 			isa = PBXGroup;
 			children = (
+				C4D9B09526377B5400C31D38 /* projectScreenshots */,
 				C4FC742526124F0400390FA3 /* Model */,
 				C40B8CE6260BC3D9004FB775 /* Controller */,
 				C40B8CE5260BC3CE004FB775 /* View */,
