@@ -46,7 +46,7 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
             case "Auxiliary Services Building":
                 self.firstClosest = "ED2/3"
                 self.secondClosest = "UDU"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "aux-building")
             case "Barnard":
                 //East Deck 1 (F/S), 2/3(student), cone deck(F/S)
                //Next closest student is probably union
