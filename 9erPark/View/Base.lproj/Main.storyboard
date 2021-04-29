@@ -61,34 +61,6 @@
                                     <segue destination="kGI-ja-Kef" kind="show" id="C9Q-Rv-9vj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dx-TK-hnk">
-                                <rect key="frame" x="94" y="601" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHt-ZB-gbZ">
-                                <rect key="frame" x="94" y="639" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPF-6B-5RQ">
-                                <rect key="frame" x="94" y="702" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Beg-bP-hNr">
-                                <rect key="frame" x="94" y="740" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="LyM-nM-7Mz" userLabel="twoButtons">
                                 <rect key="frame" x="33.5" y="242" width="347" height="122"/>
                                 <subviews>
@@ -170,7 +142,10 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relevant Announcements" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBV-VO-6wx">
-                                <rect key="frame" x="13" y="393" width="150" height="16"/>
+                                <rect key="frame" x="13" y="393" width="155" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="eDB-4t-Lyw"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -677,121 +652,121 @@ as parking is reserved for tonight’s game.</string>
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Deck Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7JR-94-mo4" userLabel="deck1">
-                                                <rect key="frame" x="41" y="7" width="138" height="20"/>
+                                                <rect key="frame" x="41" y="8" width="138" height="19"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Deck Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQm-zY-cye" userLabel="deck2">
-                                                <rect key="frame" x="41" y="81" width="138" height="20"/>
+                                                <rect key="frame" x="41" y="82" width="138" height="19"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Deck Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8X-dd-sjO" userLabel="deck3">
-                                                <rect key="frame" x="41" y="155" width="138" height="20"/>
+                                                <rect key="frame" x="41" y="156" width="138" height="19"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Deck Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OiJ-cT-6GZ" userLabel="deck4">
-                                                <rect key="frame" x="41" y="229" width="138" height="20"/>
+                                                <rect key="frame" x="41" y="230" width="138" height="19"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Deck Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdt-T0-6xI" userLabel="deck5">
-                                                <rect key="frame" x="41" y="303" width="138" height="20"/>
+                                                <rect key="frame" x="41" y="304" width="138" height="19"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Deck Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXc-pp-QWP" userLabel="deck6">
-                                                <rect key="frame" x="41" y="377" width="138" height="20"/>
+                                                <rect key="frame" x="41" y="378" width="138" height="19"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Deck Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sr9-tg-LX5" userLabel="deck7">
-                                                <rect key="frame" x="41" y="451" width="138" height="20"/>
+                                                <rect key="frame" x="41" y="452" width="138" height="19"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Deck Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phf-4g-Nui" userLabel="deck8">
-                                                <rect key="frame" x="41" y="525" width="138" height="20"/>
+                                                <rect key="frame" x="41" y="526" width="138" height="19"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Deck Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUa-no-lwX" userLabel="deck9">
-                                                <rect key="frame" x="41" y="599" width="138" height="20"/>
+                                                <rect key="frame" x="41" y="600" width="138" height="19"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Deck Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bfb-eD-Efy" userLabel="deck10">
-                                                <rect key="frame" x="41" y="673" width="138" height="20"/>
+                                                <rect key="frame" x="41" y="674" width="138" height="19"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0% Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJ9-Uz-wsQ" userLabel="percentLabel1">
-                                                <rect key="frame" x="221" y="10" width="64" height="17"/>
+                                                <rect key="frame" x="221.5" y="10" width="63.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0% Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yvV-wp-aq4" userLabel="percentLabel2">
-                                                <rect key="frame" x="221" y="84" width="64" height="17"/>
+                                                <rect key="frame" x="221.5" y="84" width="63.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0% Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oax-2k-zWp" userLabel="percentLabel3">
-                                                <rect key="frame" x="221" y="158" width="64" height="17"/>
+                                                <rect key="frame" x="221.5" y="158" width="63.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0% Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvG-rZ-4c4" userLabel="percentLabel4">
-                                                <rect key="frame" x="221" y="232" width="64" height="17"/>
+                                                <rect key="frame" x="221.5" y="232" width="63.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0% Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4y-VQ-YB1" userLabel="percentLabel5">
-                                                <rect key="frame" x="221" y="306" width="64" height="17"/>
+                                                <rect key="frame" x="221.5" y="306" width="63.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0% Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLc-EX-mJb" userLabel="percentLabel6">
-                                                <rect key="frame" x="221" y="380" width="64" height="17"/>
+                                                <rect key="frame" x="221.5" y="380" width="63.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0% Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Khh-U7-UET" userLabel="percentLabel7">
-                                                <rect key="frame" x="221" y="454" width="64" height="17"/>
+                                                <rect key="frame" x="221.5" y="454" width="63.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0% Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKC-Ke-atn" userLabel="percentLabel8">
-                                                <rect key="frame" x="221" y="528" width="64" height="17"/>
+                                                <rect key="frame" x="221.5" y="528" width="63.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0% Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Duc-zI-WDs" userLabel="percentLabel9">
-                                                <rect key="frame" x="221" y="602" width="64" height="17"/>
+                                                <rect key="frame" x="221.5" y="602" width="63.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.0% Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WvZ-0l-Y2k" userLabel="percentLabel10">
-                                                <rect key="frame" x="221" y="676" width="64" height="17"/>
+                                                <rect key="frame" x="221.5" y="676" width="63.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -971,33 +946,53 @@ as parking is reserved for tonight’s game.</string>
                                 <rect key="frame" x="33.5" y="381" width="347" height="113"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tix-Q5-Xt2">
-                                        <rect key="frame" x="222" y="88" width="26" height="17"/>
+                                        <rect key="frame" x="246" y="88" width="26" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deck Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdg-Ip-Fgs">
-                                        <rect key="frame" x="128" y="45.5" width="91.5" height="22"/>
+                                        <rect key="frame" x="128" y="20" width="91.5" height="22"/>
                                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5qo-o7-8if">
-                                        <rect key="frame" x="98" y="76" width="150" height="4"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dik-w0-nIu" userLabel="progressBar">
+                                        <rect key="frame" x="47" y="50" width="253" height="33"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4wA-TI-a1Q" userLabel="barBg">
+                                                <rect key="frame" x="0.0" y="0.0" width="253" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.76862745099999996" green="0.76862745099999996" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XZb-nI-NSs" userLabel="deckPercent">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="33"/>
+                                                <color key="backgroundColor" red="0.0" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="Flk-4W-Ek9"/>
+                                                    <constraint firstAttribute="height" constant="33" id="u4C-Gs-TlV"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="Gav-t2-cio"/>
+                                            <constraint firstItem="XZb-nI-NSs" firstAttribute="top" secondItem="Dik-w0-nIu" secondAttribute="top" id="GZM-c9-1Ng"/>
+                                            <constraint firstAttribute="width" constant="253" id="Hly-Sd-Auu"/>
+                                            <constraint firstAttribute="height" constant="33" id="Sf6-he-mwy"/>
+                                            <constraint firstItem="XZb-nI-NSs" firstAttribute="leading" secondItem="Dik-w0-nIu" secondAttribute="leading" id="hHi-Qw-qCH"/>
                                         </constraints>
-                                    </progressView>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="jdg-Ip-Fgs" firstAttribute="centerY" secondItem="xDM-WO-VuT" secondAttribute="centerY" id="5Vw-TY-eXs"/>
-                                    <constraint firstItem="5qo-o7-8if" firstAttribute="leading" secondItem="xDM-WO-VuT" secondAttribute="leading" constant="98" id="AQc-NN-ntd"/>
                                     <constraint firstAttribute="width" constant="347" id="AzN-3a-nZQ"/>
-                                    <constraint firstItem="5qo-o7-8if" firstAttribute="top" secondItem="jdg-Ip-Fgs" secondAttribute="bottom" constant="8.5" id="jVH-c8-rMF"/>
-                                    <constraint firstAttribute="bottom" secondItem="tix-Q5-Xt2" secondAttribute="bottom" constant="8" id="w2S-c1-yac"/>
-                                    <constraint firstItem="jdg-Ip-Fgs" firstAttribute="centerX" secondItem="xDM-WO-VuT" secondAttribute="centerX" id="xCq-3j-36g"/>
-                                    <constraint firstAttribute="trailing" secondItem="tix-Q5-Xt2" secondAttribute="trailing" constant="99" id="ycl-5a-cxQ"/>
+                                    <constraint firstItem="tix-Q5-Xt2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xDM-WO-VuT" secondAttribute="leading" constant="20" symbolic="YES" id="B6R-Qf-uXI"/>
+                                    <constraint firstItem="jdg-Ip-Fgs" firstAttribute="top" secondItem="xDM-WO-VuT" secondAttribute="top" constant="20" id="L8E-Mq-nqw"/>
+                                    <constraint firstItem="tix-Q5-Xt2" firstAttribute="top" secondItem="Dik-w0-nIu" secondAttribute="bottom" constant="5" id="b9j-19-hIs"/>
+                                    <constraint firstItem="Dik-w0-nIu" firstAttribute="centerX" secondItem="xDM-WO-VuT" secondAttribute="centerX" id="dgN-RV-hx8"/>
+                                    <constraint firstItem="Dik-w0-nIu" firstAttribute="top" secondItem="jdg-Ip-Fgs" secondAttribute="bottom" constant="8" id="f9C-4j-aZV"/>
+                                    <constraint firstAttribute="trailing" secondItem="tix-Q5-Xt2" secondAttribute="trailing" constant="75" id="h42-aZ-S2J"/>
+                                    <constraint firstItem="jdg-Ip-Fgs" firstAttribute="centerX" secondItem="xDM-WO-VuT" secondAttribute="centerX" id="ofn-ga-g63"/>
                                     <constraint firstAttribute="height" constant="113" id="zO9-S5-WAa"/>
                                 </constraints>
                             </view>
@@ -1017,10 +1012,11 @@ as parking is reserved for tonight’s game.</string>
                     </view>
                     <navigationItem key="navigationItem" id="pyJ-2X-FIM"/>
                     <connections>
+                        <outlet property="buildingImage" destination="GCe-5l-riN" id="0Yh-tk-5VY"/>
                         <outlet property="buildingLabel" destination="9vI-9U-JRe" id="W3C-yV-bc5"/>
                         <outlet property="deckLabel" destination="jdg-Ip-Fgs" id="unj-0o-oFs"/>
+                        <outlet property="deckProgressBar" destination="Flk-4W-Ek9" id="ekm-6K-T4T"/>
                         <outlet property="percentLabel" destination="tix-Q5-Xt2" id="bx8-fS-EVn"/>
-                        <outlet property="progressBar" destination="5qo-o7-8if" id="aGL-49-XMj"/>
                         <segue destination="wWK-1E-MAL" kind="show" identifier="goToParkingPage" id="Mgo-Rf-m7W"/>
                     </connections>
                 </viewController>
