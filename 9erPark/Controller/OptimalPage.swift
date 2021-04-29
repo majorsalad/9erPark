@@ -161,11 +161,11 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
                 //next closest union, west, or south village (.8 miles)
                 self.firstClosest="ED2/3"
                 self.secondClosest = "WEST"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "fretwell-building")
             case "Friday":
                 self.firstClosest = "ED2/3"
                 self.secondClosest = "CD VS"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "friday-building")
             case "Gage Undergraduate Admissions Center":
                 self.firstClosest = "SOUTH"
                 self.secondClosest = "CD VS"
