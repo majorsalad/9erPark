@@ -13,6 +13,13 @@ https://assessment.uncc.edu/data-visualizations-and-survey-reports/senior-survey
 * View live parking stats on campus
 * View parking deck availability
 
+## Contributors
+* James Fenwic
+* Rahul Gawdi
+* Faisal Salad
+* Joey Thompson
+* Dagim Worku
+
 ## Images of the Application
 
 * Launch Page
