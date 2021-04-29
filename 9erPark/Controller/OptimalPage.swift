@@ -60,7 +60,7 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
             case "Baseball Indool Training Facility":
                 self.firstClosest = "WEST"
                 self.secondClosest = "UDU"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "baseball_building")
             case "Belk Gymnasium":
                 self.firstClosest = "WEST"
                 self.secondClosest = "UDU"
@@ -88,7 +88,7 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
             case "Cafeteria Activities Building":
                 self.firstClosest = "ED2/3"
                 self.secondClosest = "NORTH"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "cafeteria_building")
             case "Cameron Hall":
                 self.firstClosest = "UDU"
                 self.secondClosest = "CD VS"
@@ -108,15 +108,15 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
             case "Cedar":
                 self.firstClosest = "NORTH"
                 self.secondClosest = "ED2/3"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "cedar_hall")
             case "Center City Building": //NOT CORRECT!
                 self.firstClosest = "NORTH"
                 self.secondClosest = "ED2/3"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "ccb")
             case "College of Health & Human Services":
                 self.firstClosest = "UDU"
                 self.secondClosest = "CD VS"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "CHHS")
             case "Colvard":
                 //Cone deck  1/2(F/S), east deck 1(F/S), 2/3, west deck(student)
                 self.firstClosest="ED2/3"
@@ -125,37 +125,37 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
             case "Cone University Center":
                 self.firstClosest = "CD VS"
                 self.secondClosest = "WEST"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "cone")
             case "Denny":
                 //East deck 1(F/S), 2/3(Student), cone deck 1/2(F/S)
                 //next closest is union or west (about .8 miles)
                 self.firstClosest = "ED2/3"
                 self.secondClosest = "WEST"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "denny-building")
             case "Duke Centennial Hall":
                 self.firstClosest = "UDU"
                 self.secondClosest = "WEST"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "duke_hall")
             case "Early College High School":
                 self.firstClosest = "UDU"
                 self.secondClosest = "WEST"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "early_college")
             case "EHS Storage Shed":
                 self.firstClosest = "NORTH"
                 self.secondClosest = "UDU"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "ehs_shed")
             case "Elm":
                 self.firstClosest = "UDU"
                 self.secondClosest = "CD VS"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "elm")
             case "EPIC":
                 self.firstClosest = "UDU"
                 self.secondClosest = "WEST"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "epic")
             case "Facilities Annex 3 Greenhouse":
                 self.firstClosest = "NORTH"
                 self.secondClosest = "UDU"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "greenhouse")
             case "Fretwell":
                 //East deck 1(F/S) 2/3, cone deck 1/2
                 //next closest union, west, or south village (.8 miles)
@@ -169,11 +169,11 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
             case "Gage Undergraduate Admissions Center":
                 self.firstClosest = "SOUTH"
                 self.secondClosest = "CD VS"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "gage-building")
             case "Grigg":
                 self.firstClosest = "UDU"
                 self.secondClosest = "WEST"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "grigg-hall")
             case "Halton Wagner Tennix Complex":
                 self.firstClosest = "WEST"
                 self.secondClosest = "UDU"
@@ -189,7 +189,7 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
             case "Hickory":
                 self.firstClosest = "ED2/3"
                 self.secondClosest = "NORTH"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "hickory")
             case "Hunt Hall":
                 self.firstClosest = "SOUTH"
                 self.secondClosest = "CD VS"
@@ -209,7 +209,7 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
             case "Kennedy":
                 self.firstClosest = "CD VS"
                 self.secondClosest = "ED2/3"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "kennedy")
             case "King":
                 self.firstClosest = "CD VS"
                 self.secondClosest = "WEST"
@@ -221,11 +221,11 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
             case "McEniry":
                 self.firstClosest = "ED2/3"
                 self.secondClosest = "CD VS"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "mceniry")
             case "Memorial Hall":
                 self.firstClosest = "CD VS"
                 self.secondClosest = "WEST"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "memorial-hall")
             case "Miltimore Hall":
                 self.firstClosest = "UDU"
                 self.secondClosest = "NORTH"
@@ -265,7 +265,7 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
             case "Science Building":
                 self.firstClosest = "ED2/3"
                 self.secondClosest = "UDU"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "science-building")
             case "Scott Hall":
                 self.firstClosest = "SOUTH"
                 self.secondClosest = "CD VS"
@@ -277,7 +277,7 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
             case "Wells Fargo Field House":
                 self.firstClosest = "WEST"
                 self.secondClosest = "UDU"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+                self.buildingImage.image = UIImage(named: "wells_fargo_house")
             case "Winningham":
                 self.firstClosest = "ED2/3"
                 self.secondClosest = "CD VS"
