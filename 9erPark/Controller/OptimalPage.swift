@@ -38,7 +38,7 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
             case "Athletic Storage":
                 self.firstClosest = "WEST"
                 self.secondClosest = "UDU"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+//                self.buildingImage.image = UIImage(named: "woodward-hall")
             case "Atkins":
                 self.firstClosest = "CD VS"
                 self.secondClosest = "WEST"
@@ -72,7 +72,7 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
             case "BES Recycling Facility":
                 self.firstClosest = "NORTH"
                 self.secondClosest = "UDU"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+//                self.buildingImage.image = UIImage(named: "woodward-hall")
             case "Bioinformatics":
                 self.firstClosest = "UDU"
                 self.secondClosest = "WEST"
@@ -96,7 +96,7 @@ class OptimalPage : UIViewController, ParkingManagerDelegate {
             case "Carriage House":
                 self.firstClosest = "SOUTH"
                 self.secondClosest = "WEST"
-                self.buildingImage.image = UIImage(named: "woodward-hall")
+//                self.buildingImage.image = UIImage(named: "woodward-hall")
             case "Cato College of Education":
                 self.firstClosest = "UDU"
                 self.secondClosest = "WEST"
